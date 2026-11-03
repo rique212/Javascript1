@@ -1,0 +1,35 @@
+body{
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.conteudo{
+    text-align: center;
+    margin: 0 auto;
+    background-color: chocolate;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+
+input, button{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+button:hover{
+    background-color: brown;
+    color: white;
+    transition: 2s;
+}
+
+span{
+    color: white;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósito de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Controle de Estoque</h1>
+
+        <input type="text" id="nomeProduto" placeholder="Nome do produto">
+        <input type="number" id="quantidadeProduto" placeholder="Quantidade">
+
+        <button onclick="adicionarProduto()">Adicionar</button>
+
+        <h2>Produtos em Estoque</h2>
+        <ul id="listaProdutos"></ul>
+    </div>
+
+    <script>
+        function adicionarProduto() {
+        const nome = document.getElementById("nomeProduto").value;
+        const quantidade = document.getElementById("quantidadeProduto").value;
+
+        if(nome === "" || quantidade === "") {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        const lista = document.getElementById("listaProdutos");
+
+        const item = document.createElement("li");
+        item.textContent = `${nome} - Quantidade: ${quantidade}`;
+
+        lista.appendChild(item);
+
+        document.getElementById("nomeProduto").value = "";
+        document.getElementById("quantidadeProduto").value = "";
+}
+    </script>
+</body>
+</html>

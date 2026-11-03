@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar o fundo da tela</title>
+    <style>
+          
+    </style>
+
+    
+</head>
+<body>
+    <h1 >Olá mundo</h1>
+    <button onclick="mudar_titulo()">Mudar cor do titulo</button>
+    <button onclick="mudarcor()">Mudar de cor do fundo</button>
+    <button onclick="voltarcor()">Voltar a cor </button>
+    <script>
+        function mudarcor(){
+            document.body.style.backgroundColor = 'black'
+        }
+
+        function voltarcor(){ 
+            var escolher_cor = window.prompt('Qual cor você quer? ')
+            document.body.style.backgroundColor = escolher_cor
+        }
+
+        function mudar_titulo(){
+            var cor_titulo = window.prompt('Qual cor você que para o titulo? ')
+            document.body.style.color = cor_titulo
+        }
+    </script>
+    
+</body>
+</html>

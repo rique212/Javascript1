@@ -1,0 +1,32 @@
+body{
+    background-color: dodgerblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+.conteudo{
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+}
+
+#inicio, #fim, #passo{
+    margin: 5px;
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: dodgerblue;
+    color: white;
+}

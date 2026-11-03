@@ -1,0 +1,40 @@
+body{
+    background-color: dodgerblue;
+    font: 16pt Arial;
+}
+
+h1{
+    text-align: center;
+}
+
+#conteudo{
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+input, button{
+    margin: 10px;
+}
+
+#nascimento{
+    border-radius: 5px;
+}
+
+button{
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
